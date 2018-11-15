@@ -7,8 +7,17 @@
     font-family: 'Lato', sans-serif;
 }
 
+h3{
+	font-size: 20px;
+}
+
+p.font-15{
+	letter-spacing: .5px;
+	color: rgba(255,255,255,.65);
+}
+
 .navbar-nav>.nav-item{
-    margin: 0px 5px;
+    margin: 5px;
 
     a.nav-link{
         color: #000000bf;
@@ -18,4 +27,12 @@
             color: #000;
         }
     }
+}
+
+@media screen and (max-width: 992px){
+	.navbar-nav>.nav-item{
+		>a.btn{
+			display: block;
+		}
+	}
 }

@@ -11,7 +11,15 @@ $sides: (top, bottom, left, right);
     }
     .m-#{$space}{
         margin: #{$space}rem;
-    }
+	}
+	.px-#{$space}{
+		padding-left: #{$space}rem;
+		padding-right: #{$space}rem;
+	}
+	.py-#{$space}{
+		padding-top: #{$space}rem;
+		padding-bottom: #{$space}rem;
+	}
 
     @each $side in $sides {
         .m#{str-slice($side, 0, 1)}-#{$space} {
