@@ -29,6 +29,37 @@ p.font-15{
     }
 }
 
+.section-header{
+    h2{
+        font-weight: 600;
+        line-height: 40px;
+    }    
+
+    p.mx-auto{
+        max-width: 568px;
+        color: #767a80;
+        line-height: 1.8;
+    }
+}
+
+footer{
+    color: #767a80;
+
+    h3{
+        font-size: 14px;
+    }
+
+    li{
+        list-style-type: none;
+    }
+    .copyright{
+        border-top: 1px solid #ddd;
+        .menu{
+            li{
+                display: inline-block;
+            }
+        }
+    }
 @media screen and (max-width: 992px){
 	.navbar-nav>.nav-item{
 		>a.btn{
