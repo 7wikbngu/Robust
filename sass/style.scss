@@ -43,7 +43,7 @@ p.font-15{
         .nav>.nav-item{
             position: relative;
             a.nav-link{
-                border: 2px solid #ddd;
+                border: 1px solid #ddd;
                 color: #000;
                 font-weight: 600;
             }
@@ -62,8 +62,8 @@ p.font-15{
                 margin-top: -5px;
                 transform: rotate(45deg);
                 margin-left: -5px;
-                border-top: 2px solid #ddd;
-                border-right: 2px solid #ddd;
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
                 border-bottom: 0px solid #ddd;
                 border-left: 0px solid #ddd;
             }
@@ -76,7 +76,7 @@ p.font-15{
             .nav-link.active::after{
                 background: #007bff;
             }
-        }   
+        } 
     }
 }
 
@@ -108,10 +108,7 @@ p.font-15{
         margin-top: -15px;
         transform: rotate(45deg);
         margin-left: -15px;
-        border-top: solid #ddd;
-        border-right: solid #ddd;
-        border-bottom: none;
-        border-left: none;
+        border: none;
     }
 }
 
@@ -147,6 +144,65 @@ p.font-15{
     }
 }
 
+.faq{
+    .faq-header>h2{
+        font-weight: 600;
+        line-height: 40px;
+    }
+    
+    .faq-list{
+        list-style-type: none;
+
+        h3{
+            font-weight: 300;
+            line-height: 40px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .faq-footer{
+        h3{
+            font-weight: 600;
+            line-height: 40px;
+            letter-spacing: 0.5px;
+        }
+        a{
+            border-bottom: 1px dotted;
+        }
+        a:hover{
+            box-shadow: none;
+            color: #007bff;
+            text-decoration: none;
+        }
+    }
+}
+
+.feedback{
+    .feedback-header{
+        h2{
+            font-weight: 600;
+            line-height: 40px;
+        }
+    }
+    .feedback-carousel{
+        .card{
+            background: #fff;
+            position: relative;
+            height: 225px;
+        }
+        .card::before{
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            background: red;
+            top: 100%;
+            left: 10%;
+            z-index: 10;
+        }
+    }
+}
+
 .contact-stats{
     h2{
         font-weight: 600;
@@ -157,7 +213,7 @@ p.font-15{
         border-right: 1px solid #e7ebee;
         
         form{
-            text-area{
+            textarea{
                 height: 125px;
             }
             
@@ -180,7 +236,7 @@ p.font-15{
     }
 }
 
-.section-header{
+.signup{
     h2{
         font-weight: 600;
         line-height: 40px;
