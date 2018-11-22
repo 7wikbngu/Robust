@@ -19,7 +19,13 @@ $sides: (top, bottom, left, right);
 	.py-#{$space}{
 		padding-top: #{$space}rem;
 		padding-bottom: #{$space}rem;
-	}
+    }
+    .pt-#{$space}{
+        padding-top: #{$space}rem;
+    }
+    .pb-#{$space}{
+        padding-bottom: #{$space}rem;
+    }
 
     @each $side in $sides {
         .m#{str-slice($side, 0, 1)}-#{$space} {
