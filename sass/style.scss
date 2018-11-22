@@ -2,6 +2,7 @@
 @import "utilities";
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 *{
     font-family: 'Lato', sans-serif;
@@ -77,6 +78,27 @@ p.font-15{
                 background: #007bff;
             }
         } 
+    }
+}
+
+
+.intro{
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+        }
+    }
+
+    .companyImg{
+        width: 180px;
+        height: 80px;
+        filter: brightness(0) contrast(0);
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
 
@@ -232,6 +254,9 @@ p.font-15{
         font-weight: 600;
         line-height: 40px;
     }
+    p.font-24{
+        font-weight: 300;
+    }
 
     .contact-us{
         border-right: 1px solid #e7ebee;
@@ -256,6 +281,17 @@ p.font-15{
         list-style: none;
         li{
             display: inline-block;
+        }
+    }
+
+    .companyImg{
+        width: 180px;
+        height: 80px;
+        filter: brightness(0) contrast(0);
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 0.8;
         }
     }
 }
@@ -308,5 +344,14 @@ footer{
 		>a.btn{
 			display: block;
 		}
-	}
+    }
+    
+    .nav-item.w-25{
+        width: auto;
+    }
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
 }

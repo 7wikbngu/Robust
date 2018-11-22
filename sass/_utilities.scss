@@ -39,7 +39,14 @@ $sides: (top, bottom, left, right);
 }
 
 @for $i from 0 to 51 {
+    $val: $i * 50;
     .font-#{$i} {
         font-size: #{$i}px;
+    }
+    .w-#{$val}{
+        width: #{$val}px;
+    }
+    .h-#{$val}{
+        height: #{$val}px;
     }
 }
