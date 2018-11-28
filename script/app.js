@@ -2,7 +2,9 @@ $(document).ready(function(){
     var owl = $('.owl-carousel');
     owl.owlCarousel({
         loop:true,
-        nav:true,
+        dots:true,
+        mouseDrag:true,
+        touchDrag:true,
         margin:10,
         responsive:{
             0:{
@@ -11,11 +13,8 @@ $(document).ready(function(){
             600:{
                 items:2
             },            
-            960:{
-                items:3
-            },
             1200:{
-                items:4
+                items:3
             }
         }
     });
